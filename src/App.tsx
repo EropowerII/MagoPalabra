@@ -79,7 +79,7 @@ export default function App() {
         <main className="relative aspect-[1792/1024] w-full h-full max-w-full max-h-full shadow-2xl overflow-hidden bg-black">
            {/* Actual Background Image - Matches aspect ratio exactly */}
            <img 
-             src="/assets/BackgroundWordBattle.png" 
+             src="assets/BackgroundWordBattle.png" 
              className="absolute inset-0 w-full h-full object-fill pointer-events-none"
              alt=""
            />
@@ -96,7 +96,7 @@ export default function App() {
                <div className="relative w-full h-full flex items-center justify-center">
                  <div className="w-full h-full flex items-center justify-center float-animation relative">
                     <img 
-                      src="/assets/Mage.png" 
+                      src="assets/Mage.png" 
                       alt="Mago" 
                       className="max-w-full max-h-full object-contain magic-glow drop-shadow-[0_0_35px_rgba(59,130,246,0.7)]" 
                       referrerPolicy="no-referrer" 
@@ -150,7 +150,7 @@ export default function App() {
              >
                <div className="w-full h-full flex items-center justify-center float-animation relative" style={{ animationDelay: '0.5s' }}>
                  <img 
-                   src="/assets/Enemy.png" 
+                   src="assets/Enemy.png" 
                    alt="Burro" 
                    className="max-w-full max-h-full object-contain drop-shadow-[0_0_35px_rgba(239,68,68,0.7)]" 
                    referrerPolicy="no-referrer" 
@@ -215,7 +215,7 @@ export default function App() {
             <button 
               disabled={gameState !== 'playing' || isGameOver}
               onClick={() => handleAnswer('aguda')}
-              className={`magic-card btn-aguda p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-black/40 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
+              className={`magic-card btn-aguda p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-emerald-900/60 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
             >
               <span className="text-lg md:text-2xl font-black uppercase text-white tracking-wider">Aguda</span>
               <span className="text-[7px] md:text-[9px] uppercase font-bold text-emerald-200 opacity-80">Última</span>
@@ -224,7 +224,7 @@ export default function App() {
              <button 
                disabled={gameState !== 'playing' || isGameOver}
                onClick={() => handleAnswer('grave')}
-               className={`magic-card btn-grave p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-black/40 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
+               className={`magic-card btn-grave p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-amber-900/60 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
              >
               <span className="text-lg md:text-2xl font-black uppercase text-white tracking-wider">Grave</span>
               <span className="text-[7px] md:text-[9px] uppercase font-bold text-amber-200 opacity-80">Penúltima</span>
@@ -233,7 +233,7 @@ export default function App() {
              <button 
                disabled={gameState !== 'playing' || isGameOver}
                onClick={() => handleAnswer('esdrújula')}
-               className={`magic-card btn-esdrujula p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-black/40 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
+               className={`magic-card btn-esdrujula p-1 md:p-2 flex flex-col items-center justify-center transition-opacity bg-purple-900/60 ${gameState !== 'playing' ? 'opacity-50' : 'opacity-100'}`}
              >
               <span className="text-lg md:text-2xl font-black uppercase text-white tracking-wider">Esdrújula</span>
               <span className="text-[7px] md:text-[9px] uppercase font-bold text-purple-200 opacity-80">Antep.</span>
